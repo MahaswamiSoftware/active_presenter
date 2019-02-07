@@ -7,6 +7,7 @@ module ActivePresenter
     extend  ActiveModel::Translation
     #include ActiveModel::MassAssignmentSecurity
     include ActiveModel::Conversion
+    include ActiveModel::ForbiddenAttributesProtection
 
     attr_reader :errors
 
